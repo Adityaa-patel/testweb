@@ -31,13 +31,13 @@ html {
     background: #b39ddb
 }
 
-.highlighted[data-astro-cid-j7pv25f6] {
+.highlighted {
     color: #000;
     display: table;
     background-color: #ede7f6
 }
 
-#header[data-astro-cid-j7pv25f6] {
+#header {
     padding: .4em;
     background-color: #eee;
     color: #616161;
@@ -51,74 +51,74 @@ html {
     user-select: none
 }
 
-.tab[data-astro-cid-j7pv25f6] {
+.tab {
     cursor: pointer
 }
 
-.note[data-astro-cid-j7pv25f6] {
+.note {
     margin: 0 14px;
     color: #212121;
     font-size: .8em
 }
 
 @media (min-device-width: 620px) {
-    #header[data-astro-cid-j7pv25f6] ul[data-astro-cid-j7pv25f6] {
+    #header ul {
         padding-left:.6em;
         padding-right: .6em;
         display: flex;
         flex-direction: row
     }
 
-    #header[data-astro-cid-j7pv25f6] li[data-astro-cid-j7pv25f6] {
+    #header li {
         display: inline;
         margin-right: 1.4em
     }
 }
 
 @media (max-device-width: 620px) {
-    #header[data-astro-cid-j7pv25f6] ul[data-astro-cid-j7pv25f6] {
+    #header ul {
         padding-left:.6em;
         padding-right: .6em;
         display: flex;
         flex-direction: column
     }
 
-    #header[data-astro-cid-j7pv25f6] li[data-astro-cid-j7pv25f6] {
+    #header li {
         text-align: center;
         padding: .2em
     }
 
-    #header[data-astro-cid-j7pv25f6] {
+    #header {
         padding: .1em 0
     }
 }
 
-#header[data-astro-cid-j7pv25f6] li[data-astro-cid-j7pv25f6]:hover {
+#header li:hover {
     color: #6a1b9a
 }
 
-#header[data-astro-cid-j7pv25f6] li[data-astro-cid-j7pv25f6]:before {
+#header li:before {
     content: "#";
     padding-right: 5px
 }
 
-ul[data-astro-cid-j7pv25f6] {
+ul {
     padding-left: .6em;
     list-style: none
 }
 
-ul[data-astro-cid-j7pv25f6] span[data-astro-cid-j7pv25f6] {
+ul span {
     display: block;
     margin-left: .94em;
     font-size: 18px
 }
 
-li[data-astro-cid-j7pv25f6]:before {
+li:before {
     content: ">";
     padding-right: 5px
 }
 
-.wrapper[data-astro-cid-j7pv25f6] {
+.wrapper {
     max-width: 1100px;
     margin: 0 auto;
     padding-bottom: 1em;
@@ -126,15 +126,15 @@ li[data-astro-cid-j7pv25f6]:before {
     font-size: 20px
 }
 
-.section[data-astro-cid-j7pv25f6] {
+.section {
     margin: 10px 20px
 }
 
-.tab_active[data-astro-cid-j7pv25f6] {
+.tab_active {
     color: #4a148c
 }
 
-.link[data-astro-cid-j7pv25f6] {
+.link {
     position: relative;
     text-decoration: none;
     display: inline-block;
@@ -144,7 +144,7 @@ li[data-astro-cid-j7pv25f6]:before {
     transition: color ease .3s
 }
 
-.link[data-astro-cid-j7pv25f6]:after {
+.link:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -157,20 +157,20 @@ li[data-astro-cid-j7pv25f6]:before {
     transition: all ease .3s
 }
 
-.link[data-astro-cid-j7pv25f6]:hover {
+.link:hover {
     z-index: 90000;
     color: #fff
 }
 
-.link[data-astro-cid-j7pv25f6]:hover:after {
+.link:hover:after {
     height: 100%
 }
 
-.link_icon[data-astro-cid-j7pv25f6] {
+.link_icon {
     color: #512da8
 }
 
-#background[data-astro-cid-j7pv25f6] {
+#background {
     z-index: -100;
     position: absolute;
     top: 0;
