@@ -23,12 +23,8 @@ html {
     overflow-y: scroll
 }
 
-::-moz-selection {
-    background: #b39ddb
-}
-
 ::selection {
-    background: #b39ddb
+    background: #ff0000
 }
 
 .highlighted {
