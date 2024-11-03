@@ -52,6 +52,8 @@ html {
 }
 
 .tab {
+    color: #eee;
+    text-decoration: none;
     cursor: pointer
 }
 
@@ -131,7 +133,8 @@ li:before {
 }
 
 .tab_active {
-    color: #4a148c
+    color: #4a148c;
+    text-decoration: none;
 }
 
 .link {
