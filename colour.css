@@ -176,14 +176,26 @@ li:before {
     left: 0;
     width: 100%
 }
+
+#header li {
+    display: inline-block;
+    margin-right: 1.4em;
+}
+
+#header li:before {
+    content: "#"; /* The # symbol is added before the tab text */
+    padding-right: 5px;
+    color: #616161; /* Ensure it matches the color of the inactive tab */
+}
+
 .tab {
-    color: #616161; /* Inactive tabs are now a visible gray color */
+    color: #616161; /* Ensure both the # and the text are visible */
     text-decoration: none;
     cursor: pointer;
 }
 
 .tab_active {
-    color: #4a148c; /* Active tab is more prominent */
+    color: #4a148c; /* Highlight both # and text for the active tab */
     text-decoration: none;
 }
 
