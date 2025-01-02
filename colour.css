@@ -176,3 +176,17 @@ li:before {
     left: 0;
     width: 100%
 }
+.tab {
+    color: #616161; /* Inactive tabs are now a visible gray color */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab_active {
+    color: #4a148c; /* Active tab is more prominent */
+    text-decoration: none;
+}
+
+#header li:hover .tab {
+    color: #6a1b9a; /* Hover effect for better navigation experience */
+}
