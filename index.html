@@ -3,42 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Astro description">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/favicon.ico">
     <link rel="stylesheet" href="colour.css" />
-    <title>About</title>
+    <title>Single Page Website</title>
 </head>
-<body> 
+<body>
     <div class="wrapper">
-        <div id="header">
+        <header id="header">
             <ul>
-                <li><a id="link_about" class="tab_active" target="_self" href="index.html">About</a></li>
-                <li><a id="link_projects" class="tab" target="_self" href="projects.html">Projects</a></li>
-                <li><a id="link_contact" class="tab" target="_self" href="contact.html">Contact</a></li>
+                <li><a id="link_about" class="tab tab_active" href="#about">About</a></li>
+                <li><a id="link_projects" class="tab" href="#projects">Projects</a></li>
+                <li><a id="link_contact" class="tab" href="#contact">Contact</a></li>
             </ul>
-        </div>
-        <div id="about" class="section section_active">
-            <p>
-                Hey! My name is Aditya. I am interested in web development and basically everything, and this is my first website RAHHHHHHHH :&gt;
-            </p>
-            <p>
-                Age: <i>19</i><br>
-                Location: <i>Amravati, Andhra Pradesh</i><br>
-                Languages: <i>English, Hindi</i><br><br>
-                Job: <i><a class="link" href="aboutme.html" target="_blank">unemployed;/</a></i><br>
-                Education: <i><a class="link" href="https://vitap.ac.in/" target="_blank">VIT</a> '28</i> 
-            </p>
-            <ul> 
-                <li style="margin: 2px 0">Email&nbsp;&nbsp;&nbsp;&nbsp; <i><a class="link" target="_blank" href="mailto:madeforaditya@gmail.com">madeforaditya@gmail.com</a> | <a class="link" target="_blank" href="mailto:tbhnotaditya@gmail.com">tbhnotaditya@gmail.com</a></i></li>
-                <li style="margin: 2px 0">Telegram&nbsp; <i><a class="link" target="_blank" href="https://t.me/fAKEACC">@ADITYAA</a></i></li>
-                <li style="margin: 2px 0">GitHub&nbsp;&nbsp;&nbsp; <i><a class="link" target="_blank" href="https://github.com/Adityaa-patel">@Adityaa-patel</a></i></li>
-                <li style="margin: 2px 0">LinkedIn&nbsp; <i><a class="link" target="_blank" href="https://www.linkedin.com/in/aditya-patel-554964223">Aditya-patel</a></i></li>
+        </header>
+
+        <section id="about" class="section">
+            <p>Hey! My name is Aditya. I am interested in web development and basically everything. This is my first website! 😄</p>
+        </section>
+
+        <section id="projects" class="section">
+            <p>Check out some of the cool projects I've been working on!</p>
+        </section>
+
+        <section id="contact" class="section">
+            <p>Feel free to contact me via the following:</p>
+            <ul>
+                <li>Email: <a href="mailto:madeforaditya@gmail.com">madeforaditya@gmail.com</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/adityayayayyaya/">@adityayayayyaya</a></li>
+                <li>GitHub: <a href="https://github.com/Adityaa-patel">Adityaa-patel</a></li>
+                <li>Discord: @adityayayayyaya</li>
             </ul>
-        </div>
-        <div id="background">
-            <div class="wrapper" style="background: #FAFAFA; height: 100%;"></div>
-        </div>
+        </section>
     </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 
